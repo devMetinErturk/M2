@@ -1,0 +1,144 @@
+main {
+    text-align: center;
+    margin-bottom:3rem;
+}
+
+main>h1 {
+    padding-block: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--color-primary);
+    color: var(--color-secondry);
+}
+
+main>nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    background-color: #000;
+}
+
+main>nav>label {
+    background-color: #000000;
+    color: #ffffff;
+    padding-block: 1.8rem;
+    padding-inline: 2rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+main>nav>label:has(input:checked) {
+    background-color: #2a5090;
+    color: #fff;
+}
+
+main>nav>label>input {
+    display: none;
+}
+
+details {
+    margin-bottom: 1.5rem;
+    background-color: #bfd0ee;
+    border-radius: 2rem;
+    padding-bottom:2.5rem;
+    margin-inline:5rem;
+}
+
+summary {
+    color: #2a5090;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+    margin-block: 2rem;
+    border: 0.1rem solid #2a5090;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    padding-block: 0.7rem;
+    padding-inline: 1.8rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    letter-spacing: 0.05rem;
+}
+
+details + p.hint {
+    color: #000000;
+    font-style: italic;
+    font-weight: normal;
+    
+    font-size: 1rem;
+    margin-top: -4.5rem;
+}
+
+details[open] + p.hint {
+    display: none;
+}
+
+main>details>ul {
+    padding-inline: 8%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+main>details>ul>li {
+    margin: 1rem;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 0.5rem;
+}
+
+main>details>ul>li>a>p {
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding-block: 1rem;
+    min-height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main>details>ul>li>a>img {
+    width: 100%;
+    max-width: 400px;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+}
+
+main>details>ul>li>p {
+    font-size: 1.3rem;
+    padding-inline: 1rem;
+    flex-grow: 1;
+}
+
+main>details>ul>li>b {
+    font-size: 1.4rem;
+    display: block;
+    margin: 0.5rem;
+    margin-top: auto;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+}
+
+main>details>ul>li>button {
+    font-size: 1.3rem;
+    display: block;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    background-color: #2a5090;
+    color: #fff;
+    padding-block: 0.7rem;
+    padding-inline: 1.8rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.05rem;
+}

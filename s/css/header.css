@@ -1,0 +1,24 @@
+header {
+    text-align: center;
+    padding: 3rem;
+    margin-top: 3.5rem;
+}
+
+header>a {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header>a>img {
+    width: 60px;
+    margin-right: 1rem;
+}
+
+header>a>b {
+    font-size: 2.5rem;
+}
+
+header>p {
+    font-size: 1.5rem;
+}

@@ -1,0 +1,1014 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+    <product>
+        <category>Izgaralar</category>
+        <category_url>izgaralar</category_url>
+        <name>Izgara Köfte</name>
+        <url_name>izgara-kofte</url_name>
+        <price>450</price>
+        <images>
+            <image>izgara-kofte.jpg</image>
+        </images>
+        <keywords>ızgara köfte, el yapımı köfte, geleneksel köfte, et köfte, köfte</keywords>
+        <html_desc>Özenle hazırlanmış kasap köfteler, çıtır patates kızartması, taze salata ve günlük garnitür eşliğinde servis edilir.</html_desc>
+        <short_desc>Günlük taze kasap etinden özel baharat karışımıyla hazırlanan köftelerimiz, ızgarada ustalıkla pişirilir. Altın sarısı çıtır patates kızartması ve garnitür ile sunulur.</short_desc>
+        <weightInGrams>200</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>Günlük taze kasap etinden hazırlanır.</item>
+                    <item>Özel baharat karışımı ile lezzetlendirilir.</item>
+                    <item>ızgarada pişirilir, dışı çıtır içi yumuşak olur.</item>
+                    <item>Çıtır patates kızartması ve taze salata ile servis edilir.</item>
+                </items>
+            </detail>
+            <detail title="Hazırlık ve Pişirme">
+                <items>
+                    <item>Izgarada yüksek ısıda pişirilir.</item>
+                    <item>Standart olarak "orta pişmiş" hazırlanır; tercihinize göre pişirme derecesi ayarlanabilir.</item>
+                    <item>Servis öncesi 2-3 dakika dinlendirilir.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>Izgaralar</category>
+        <category_url>izgaralar</category_url>
+        <name>Izgara Tavuk</name>
+        <url_name>izgara-tavuk</url_name>
+        <price>385</price>
+        <images>
+            <image>izgara-tavuk.jpg</image>
+        </images>
+        <keywords>ızgara tavuk, soslu tavuk, marine tavuk, sağlıklı tavuk, pişmiş tavuk</keywords>
+        <html_desc>Izgarada pişirilmiş tavuklar, patates kızartması, taze salata ve garnitür ile servis edilir.</html_desc>
+        <short_desc>Özenle marine edilmiş tavuklarımız, ızgarada mükemmel pişirilir. Yumuşacık dokusu ile altın sarısı patates ve taze garnitür eşliğinde sunulur. Hafif ve lezzetli bir seçenek arayanlar için ideal.</short_desc>
+        <weightInGrams>180</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>Taze tavuk kullanılır.</item>
+                    <item>Özel marine sosu ile tatlandırılır.</item>
+                    <item>Patates kızartması ve taze salata ile servis edilir.</item>
+                </items>
+            </detail>
+            <detail title="Hazırlık ve Pişirme">
+                <items>
+                    <item>Tavuk en az 2 saat marine edilir.</item>
+                    <item>Orta ateşte her iki tarafı eşit pişirilir.</item>
+                    <item>Servis öncesi dilimlenebilir.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>Ekmek Arası Ürünler</category>
+        <category_url>ekmek-arasi-urunler</category_url>
+        <name>Ekmek Arası Izgara Tavuk</name>
+        <url_name>ekmek-arasi-izgara-tavuk</url_name>
+        <price>330</price>
+        <images>
+            <image>ekmek-arasi-izgara-tavuk.jpg</image>
+        </images>
+        <keywords>ekmek arası tavuk, tavuk sandviç, ızgara tavuk ekmek, sokak lezzeti, pratik öğün</keywords>
+        <html_desc>Izgara tavuk bonfile, taze soğan, domates ve turşu ile ekmek arasında servis edilir.</html_desc>
+        <short_desc>Taze pişirilmiş ızgara tavuk bonfile, çıtır soğan ve domates ile özel ekmeğin arasında sunulur. Kornişon turşu ile lezzet dengesine ulaşır. Pratik ve doyurucu bir öğün arayanlar için mükemmel.</short_desc>
+        <weightInGrams>250</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>Taze ızgara tavuk bonfile kullanılır.</item>
+                    <item>Günlük taze sebzeler ile hazırlanır.</item>
+                    <item>Pratik ve doyurucu bir öğün sunar.</item>
+                </items>
+            </detail>
+            <detail title="Hazırlık ve Pişirme">
+                <items>
+                    <item>Tavuk sipariş anında ızgarada pişirilir.</item>
+                    <item>Sebzeler taze doğranır.</item>
+                    <item>Sıcak servis edilir.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>Ekmek Arası Ürünler</category>
+        <category_url>ekmek-arasi-urunler</category_url>
+        <name>Ekmek Arası Köfte</name>
+        <url_name>ekmek-arasi-kofte</url_name>
+        <price>365</price>
+        <images>
+            <image>ekmek-arasi-kofte.jpg</image>
+        </images>
+        <keywords>ekmek arası köfte, köfte sandviç, kasap köfte ekmek, sokak köftesi, geleneksel lezzet</keywords>
+        <html_desc>200 gr kasap köfte; domates, soğan, yeşillik ve turşu ile bütün ekmek arasında servis edilir.</html_desc>
+        <short_desc>Günlük taze kasap etinden hazırlanan 200 gr köftemiz ızgarada mükemmel pişirilir. Taze domates, soğan, yeşillik ve turşu ile bütün ekmeğin arasında sunulur. Geleneksel sokak lezzetinin en güzel hali.</short_desc>
+        <weightInGrams>350</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>200 gr taze kasap köftesi kullanılır.</item>
+                    <item>Günlük taze sebzeler ile hazırlanır.</item>
+                    <item>Doyurucu ve lezzetli bir öğün sunar.</item>
+                </items>
+            </detail>
+            <detail title="Hazırlık ve Pişirme">
+                <items>
+                    <item>Köfte sipariş anında ızgarada pişirilir.</item>
+                    <item>Sebzeler taze doğranır.</item>
+                    <item>Sıcak servis edilir.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>Ekmek Arası Ürünler</category>
+        <category_url>ekmek-arasi-urunler</category_url>
+        <name>Ekmek Arası Kasap Sucuk</name>
+        <url_name>ekmek-arasi-kasap-sucuk</url_name>
+        <price>355</price>
+        <images>
+            <image>ekmek-arasi-kasap-sucuk.jpg</image>
+        </images>
+        <keywords>ekmek arası sucuk, sucuk sandviç, kasap sucuk, ızgara sucuk, pişmiş sucuk</keywords>
+        <html_desc>Izgara kasap sucuk, domates, soğan, yeşillik ve turşu eşliğinde ekmek arasında servis edilir.</html_desc>
+        <short_desc>Kaliteli kasap sucuğumuz ızgarada kızartılarak taze sebzelerle buluşur. Domates, soğan, yeşillik ve turşu ile özel ekmeğin arasında sunulur. Sucuğun yoğun aroması ile unutulmaz bir lezzet deneyimi.</short_desc>
+        <weightInGrams>280</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>Kaliteli kasap sucuğu kullanılır.</item>
+                    <item>Günlük taze sebzeler ile hazırlanır.</item>
+                    <item>Sucuğun doğal yağı ile pişirilir.</item>
+                </items>
+            </detail>
+            <detail title="Hazırlık ve Pişirme">
+                <items>
+                    <item>Sucuk sipariş anında ızgarada pişirilir.</item>
+                    <item>Her iki tarafı çıtır olana kadar kızartılır.</item>
+                    <item>Sıcak servis edilir.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>Makarnalar</category>
+        <category_url>makarnalar</category_url>
+        <name>Fettuccine Alfredo</name>
+        <url_name>fettuccine-alfredo</url_name>
+        <price>415</price>
+        <images>
+            <image>fettuccine-alfredo.jpg</image>
+        </images>
+        <keywords>fettuccine alfredo, kremalı makarna, tavuklu makarna, mantarlı makarna, İtalyan makarna</keywords>
+        <html_desc>Krema sosu, mantar ve tavuk ile hazırlanan klasik İtalyan lezzeti.</html_desc>
+        <short_desc>Klasik İtalyan mutfağının vazgeçilmezi, zengin krema sosu ile taze mantar ve tavuk parçaları içerir. Al dente pişirilen fettuccine kremsi sosla harmanlanır. Enfes bir tat deneyimi sunar.</short_desc>
+        <weightInGrams>350</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>Fettuccine makarna kullanılır.</item>
+                    <item>Zengin krema sosu ile hazırlanır.</item>
+                    <item>Taze mantar ve tavuk parçaları eklenir.</item>
+                </items>
+            </detail>
+            <detail title="Hazırlık ve Pişirme">
+                <items>
+                    <item>Makarna tuzlu suda pişirilir.</item>
+                    <item>Tavuk ve mantarlar ayrı sotelenir.</item>
+                    <item>Krema sosu ile birleştirilir.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>Makarnalar</category>
+        <category_url>makarnalar</category_url>
+        <name>Kremalı Mantarlı Yassı Spagetti</name>
+        <url_name>kremali-mantarli-yassi-spagetti</url_name>
+        <price>325</price>
+        <images>
+            <image>kremali-mantarli-yassi-spagetti.jpg</image>
+        </images>
+        <keywords>kremalı makarna, mantarlı makarna, yassı spagetti, soslu makarna, İtalyan makarna</keywords>
+        <html_desc>Yoğun kremalı sos ve mantar ile hazırlanan yassı spagetti.</html_desc>
+        <short_desc>Zengin kremalı sosumuz taze mantarlarla buluşarak yassı spagettiye eşsiz lezzet katar. Kremanın yumuşaklığı mantarın toprak aromasıyla uyum yakalar. Vejetaryen dostları için ideal bir seçenek.</short_desc>
+        <weightInGrams>320</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>Yassı spagetti makarna kullanılır.</item>
+                    <item>Yoğun krema sosu ile hazırlanır.</item>
+                    <item>Taze mantar eklenir.</item>
+                </items>
+            </detail>
+            <detail title="Hazırlık ve Pişirme">
+                <items>
+                    <item>Makarna suda haşlanır.</item>
+                    <item>Mantarlar tereyağında kavrulur.</item>
+                    <item>Krema sosu eklenerek birleştirilir.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>Makarnalar</category>
+        <category_url>makarnalar</category_url>
+        <name>Sade Tereyağlı Yassı Spagetti</name>
+        <url_name>sade-tereyagli-yassi-spagetti</url_name>
+        <price>210</price>
+        <images>
+            <image>sade-tereyagli-yassi-spagetti.jpg</image>
+        </images>
+        <keywords>tereyağlı makarna, sade makarna, yassı spagetti, hafif makarna, sossuz makarna</keywords>
+        <html_desc>Tereyağı ile sade ve hafif bir lezzet sunan yassı spagetti.</html_desc>
+        <short_desc>Sadeliğin güzelliğini yansıtan tereyağlı yassı spagetti, kaliteli tereyağının zengin aromasıyla hazırlanır. Al dente pişirilen makarna tereyağı ile harmanlanır. Özellikle çocukların favorisi olan hafif bir seçenek.</short_desc>
+        <weightInGrams>280</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>Yassı spagetti makarna kullanılır.</item>
+                    <item>Tereyağı ile hazırlanır.</item>
+                    <item>Sade ve hafif bir lezzet sunar.</item>
+                </items>
+            </detail>
+            <detail title="Hazırlık ve Pişirme">
+                <items>
+                    <item>Makarna suda haşlanır.</item>
+                    <item>Sıcak tereyağı ile karıştırılır.</item>
+                    <item>Sıcak servis edilir.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>Makarnalar</category>
+        <category_url>makarnalar</category_url>
+        <name>Yoğurtlu Yassı Spagetti</name>
+        <url_name>yogurtlu-yassi-spagetti</url_name>
+        <price>185</price>
+        <images>
+            <image>yogurtlu-yassi-spagetti.jpg</image>
+        </images>
+        <keywords>yoğurtlu makarna, soslu makarna, sarımsaklı makarna, geleneksel makarna, ev yapımı</keywords>
+        <html_desc>Yoğurt sosu ile hazırlanır, isteğe bağlı sarımsaklı servis edilir.</html_desc>
+        <short_desc>Türk mutfağının sevilen lezzeti, kremsi yoğurt sosu ile yassı spagettinin buluşmasıdır. İsteğe bağlı sarımsaklı tereyağı ile zenginleştirilebilir. Hafif, ferahlatıcı ve doyurucu bir öğün seçeneği.</short_desc>
+        <weightInGrams>300</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>Yassı spagetti makarna kullanılır.</item>
+                    <item>Taze yoğurt sosu ile hazırlanır.</item>
+                    <item>İsteğe bağlı sarımsak eklenebilir.</item>
+                    <item>Geleneksel Türk lezzeti sunar.</item>
+                </items>
+            </detail>
+            <detail title="Hazırlık ve Pişirme">
+                <items>
+                    <item>Makarna suda haşlanır.</item>
+                    <item>Yoğurt sosu hazırlanır.</item>
+                    <item>İsteğe göre sarımsaklı tereyağı eklenir.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>Makarnalar</category>
+        <category_url>makarnalar</category_url>
+        <name>Barbekü Soslu Tavuklu Yassı Spagetti</name>
+        <url_name>barbeku-soslu-tavuklu-yassi-spagetti</url_name>
+        <price>395</price>
+        <images>
+            <image>barbeku-soslu-tavuklu-yassi-spagetti.jpg</image>
+        </images>
+        <keywords>barbekü makarna, tavuklu makarna, BBQ makarna, soslu makarna, yassı makarna</keywords>
+        <html_desc>Izgara tavuk ve barbekü sosunun mükemmel uyumu ile hazırlanan yassı spagetti.</html_desc>
+        <short_desc>Barbekü sosunun tatlımsı aroması ızgara tavuk parçalarıyla buluşur. Yassı spagetti ile birleşerek farklı bir makarna deneyimi sunar. Amerikan mutfağından ilham alınan lezzet.</short_desc>
+        <weightInGrams>360</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>Yassı spagetti makarna kullanılır.</item>
+                    <item>Izgara tavuk parçaları eklenir.</item>
+                    <item>Barbekü sosu ile hazırlanır.</item>
+                </items>
+            </detail>
+            <detail title="Hazırlık ve Pişirme">
+                <items>
+                    <item>Tavuk ızgarada pişirilir ve dilimlenir.</item>
+                    <item>Makarna suda haşlanır.</item>
+                    <item>Barbekü sosu ile birleştirilir.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>Makarnalar</category>
+        <category_url>makarnalar</category_url>
+        <name>Acı Soslu Tavuklu Yassı Spagetti</name>
+        <url_name>aci-soslu-tavuklu-yassi-spagetti</url_name>
+        <price>395</price>
+        <images>
+            <image>aci-soslu-tavuklu-yassi-spagetti.jpg</image>
+        </images>
+        <keywords>acılı makarna, tavuklu makarna, baharatlı makarna, hot sos, ateşli makarna</keywords>
+        <html_desc>Izgara tavuk ve acı sos ile lezzetlendirilmiş yassı spagetti.</html_desc>
+        <short_desc>Acı sevenler için hazırlanan bu yassı spagetti, ızgara tavuk ve özel acı sosumuzun birleşimidir. Baharatların ateşli dansı tavuğun lezzetiyle bütünleşir. Doyurucu ve unutulmaz bir lezzet deneyimi sunar.</short_desc>
+        <weightInGrams>360</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>Yassı spagetti makarna kullanılır.</item>
+                    <item>Izgara tavuk parçaları eklenir.</item>
+                    <item>Özel acı sos ile hazırlanır.</item>
+                </items>
+            </detail>
+            <detail title="Hazırlık ve Pişirme">
+                <items>
+                    <item>Tavuk ızgarada pişirilir.</item>
+                    <item>Makarna suda haşlanır.</item>
+                    <item>Acı sos ile harmanlanır.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>Makarnalar</category>
+        <category_url>makarnalar</category_url>
+        <name>Kıymalı Soslu Yassı Spagetti</name>
+        <url_name>kiymali-soslu-yassi-spagetti</url_name>
+        <price>485</price>
+        <images>
+            <image>kiymali-soslu-yassi-spagetti.jpg</image>
+        </images>
+        <keywords>kıymalı makarna, bolonez makarna, soslu makarna, domates soslu, klasik makarna</keywords>
+        <html_desc>Özel domates soslu kıyma ile hazırlanan yassı spagetti.</html_desc>
+        <short_desc>Klasik İtalyan bolonez sosundan ilham alan kıymalı yassı spagetti, özel domates sosu ve dana kıymasıyla hazırlanır. Zengin ve doyurucu bu makarna tüm ailenin favorisi. Et severlerin vazgeçilmez tercihi.</short_desc>
+        <weightInGrams>380</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>Yassı spagetti makarna kullanılır.</item>
+                    <item>Taze dana kıyma kullanılır.</item>
+                    <item>Özel domates sosu ile hazırlanır.</item>
+                </items>
+            </detail>
+            <detail title="Hazırlık ve Pişirme">
+                <items>
+                    <item>Kıyma soğan ile kavrulur.</item>
+                    <item>Domates sosu eklenerek pişirilir.</item>
+                    <item>Makarna ile birleştirilerek servis edilir.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>Makarnalar</category>
+        <category_url>makarnalar</category_url>
+        <name>3 Peynirli Yassı Spagetti</name>
+        <url_name>3-peynirli-yassi-spagetti</url_name>
+        <price>329</price>
+        <images>
+            <image>3-peynirli-yassi-spagetti.jpg</image>
+        </images>
+        <keywords>peynirli makarna, soslu makarna, mozzarella makarna, cheddar makarna, kaşarlı makarna</keywords>
+        <html_desc>Mozzarella, cheddar ve kaşar peynirinin eşsiz uyumu ile hazırlanan yassı spagetti.</html_desc>
+        <short_desc>Peynir tutkunları için hazırlanan bu yassı spagetti üç farklı peynirin buluşmasıdır. Mozzarellanın uzayan dokusu, cheddarın yoğunluğu ve kaşarın kremsi tadı bir arada. Peynir severler için vazgeçilmez bir tercih.</short_desc>
+        <weightInGrams>340</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>Yassı spagetti makarna kullanılır.</item>
+                    <item>Mozzarella, cheddar ve kaşar peyniri içerir.</item>
+                    <item>Zengin peynir aroması sunar.</item>
+                </items>
+            </detail>
+            <detail title="Hazırlık ve Pişirme">
+                <items>
+                    <item>Makarna suda haşlanır.</item>
+                    <item>Üç peynir eritilerek karıştırılır.</item>
+                    <item>Sıcak servis edilir.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>Makarnalar</category>
+        <category_url>makarnalar</category_url>
+        <name>Ton Balıklı Yassı Spagetti</name>
+        <url_name>ton-balikli-yassi-spagetti</url_name>
+        <price>385</price>
+        <images>
+            <image>ton-balikli-yassi-spagetti.jpg</image>
+        </images>
+        <keywords>ton balıklı makarna, balıklı makarna, deniz ürünlü, soslu makarna, yassı makarna</keywords>
+        <html_desc>Domates sosu ve ton balığı ile hazırlanan yassı spagetti.</html_desc>
+        <short_desc>Akdeniz mutfağından ilham alan ton balıklı yassı spagetti, kaliteli ton balığı ve özel domates sosuyla hazırlanır. Hafif ve sağlıklı bir seçenek arayanlar için mükemmel. Omega-3 açısından zengin besleyici bir öğün.</short_desc>
+        <weightInGrams>350</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>Yassı spagetti makarna kullanılır.</item>
+                    <item>Kaliteli ton balığı kullanılır.</item>
+                    <item>Özel domates sosu ile hazırlanır.</item>
+                </items>
+            </detail>
+            <detail title="Hazırlık ve Pişirme">
+                <items>
+                    <item>Makarna suda haşlanır.</item>
+                    <item>Ton balığı ve domates sosu ile harmanlanır.</item>
+                    <item>Sıcak servis edilir.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>Makarnalar</category>
+        <category_url>makarnalar</category_url>
+        <name>Köri Tavuklu Yassı Spagetti</name>
+        <url_name>kori-tavuklu-yassi-spagetti</url_name>
+        <price>335</price>
+        <images>
+            <image>kori-tavuklu-yassi-spagetti.jpg</image>
+        </images>
+        <keywords>körili makarna, tavuklu makarna, soslu makarna, yassı makarna, baharatlı makarna</keywords>
+        <html_desc>Köri baharatı ile lezzetlendirilmiş ızgara tavuk eşliğinde yassı spagetti.</html_desc>
+        <short_desc>Uzak Doğu'nun egzotik köri baharatı ile marine edilmiş ızgara tavuk, yassı spagetiyle buluşur. Köri'nin sıcak notaları tavuğun yumuşak dokusuyla uyum yakalar. Fusion mutfağın en güzel örneklerinden biri.</short_desc>
+        <weightInGrams>350</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>Yassı spagetti makarna kullanılır.</item>
+                    <item>Köri baharatı ile marine tavuk eklenir.</item>
+                    <item>Egzotik ve aromatik bir lezzet sunar.</item>
+                </items>
+            </detail>
+            <detail title="Hazırlık ve Pişirme">
+                <items>
+                    <item>Tavuk köri ile marine edilir.</item>
+                    <item>Izgarada pişirilir ve dilimlenir.</item>
+                    <item>Makarna ile birleştirilerek servis edilir.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>Burgerler</category>
+        <category_url>burgerler</category_url>
+        <name>Hamburger</name>
+        <url_name>hamburger</url_name>
+        <price>365</price>
+        <images>
+            <image>hamburger.jpg</image>
+        </images>
+        <keywords>hamburger, klasik burger, dana burger, et burger, ızgara burger</keywords>
+        <html_desc>Özel burger köftesi, taze domates, marul ve turşu ile hazırlanır; patates kızartması eşliğinde servis edilir.</html_desc>
+        <short_desc>Klasik Amerikan lezzetinin en saf hali, özel karışım dana etinden hazırlanan burger köftemizle sunulur. Taze domates, çıtır marul ve kornişon turşu yumuşak burger ekmeğinde buluşur. Altın sarısı patates kızartması ile servis edilir.</short_desc>
+        <weightInGrams>300</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>Dana kıyma ile köfte hazırlanır.</item>
+                    <item>Taze sebzeler ile hazırlanır.</item>
+                    <item>Yumuşak burger ekmeği ile servis edilir.</item>
+                    <item>Patates kızartması dahildir.</item>
+                </items>
+            </detail>
+            <detail title="Hazırlık ve Pişirme">
+                <items>
+                    <item>Köfte ızgarada istenilen kıvamda pişirilir.</item>
+                    <item>Ekmek hafif ısıtılır.</item>
+                    <item>Taze malzemelerle birleştirilir.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>Burgerler</category>
+        <category_url>burgerler</category_url>
+        <name>Tavukburger</name>
+        <url_name>tavukburger</url_name>
+        <price>345</price>
+        <images>
+            <image>tavukburger.jpg</image>
+        </images>
+        <keywords>tavuk burger, ızgara burger, tavuklu sandviç, ızgara tavuk burger, el yapımı burger</keywords>
+        <html_desc>Izgara tavuk, yeşillik, domates, soğan ve turşu ile hazırlanan burger.</html_desc>
+        <short_desc>Hafif ve lezzetli bir alternatif arayanlar için tavuk burgerimiz, ızgarada pişirilmiş tavuk bonfile içerir. Taze yeşillikler, domates, soğan ve turşu ile yumuşak burger ekmeğinde sunulur. Beyaz et severlerin tercihi.</short_desc>
+        <weightInGrams>280</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>Izgara tavuk bonfile kullanılır.</item>
+                    <item>Taze sebzeler ile hazırlanır.</item>
+                    <item>Yumuşak burger ekmeği ile servis edilir.</item>
+                    <item>Daha hafif bir burger alternatifi sunar.</item>
+                </items>
+            </detail>
+            <detail title="Hazırlık ve Pişirme">
+                <items>
+                    <item>Tavuk ızgarada sulu kalacak şekilde pişirilir.</item>
+                    <item>Ekmek hafif ısıtılır.</item>
+                    <item>Taze malzemelerle birleştirilir.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>Burgerler</category>
+        <category_url>burgerler</category_url>
+        <name>Cheeseburger</name>
+        <url_name>cheeseburger</url_name>
+        <price>375</price>
+        <images>
+            <image>cheeseburger.jpg</image>
+        </images>
+        <keywords>cheeseburger, peynirli burger, dana cheeseburger, cheddar burger, klasik burger</keywords>
+        <html_desc>Dana burger köftesi, burger peyniri ve taze sebzeler ile hazırlanır.</html_desc>
+        <short_desc>Burger klasiği cheeseburger, özel dana köftemizin üzerine eritilmiş burger peyniriyle sunulur. Taze sebzeler ile yumuşak burger ekmeğinde birleşir. Burger tutkunlarının vazgeçilmez tercihi.</short_desc>
+        <weightInGrams>320</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>Dana burger köftesi kullanılır.</item>
+                    <item>Özel burger peyniri eritilir.</item>
+                    <item>Taze sebzeler ile hazırlanır.</item>
+                    <item>Yumuşak burger ekmeği ile servis edilir.</item>
+                </items>
+            </detail>
+            <detail title="Hazırlık ve Pişirme">
+                <items>
+                    <item>Köfte ızgarada pişirilir.</item>
+                    <item>Peynir köfte üzerinde eritilir.</item>
+                    <item>Sıcak servis edilir.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>Yan Ürünler</category>
+        <category_url>yan-urunler</category_url>
+        <name>Patates Kızartması</name>
+        <url_name>patates-kizartmasi</url_name>
+        <price>139</price>
+        <images>
+            <image>patates-kizartmasi.jpg</image>
+        </images>
+        <keywords>patates kızartması, french fries, çıtır patates, parmak patates, kızarmış patates</keywords>
+        <html_desc>Altın sarısı çıtır patates kızartması, ketçap ve mayonez ile servis edilir.</html_desc>
+        <short_desc>Dışı çıtır içi yumuşak altın sarısı patates kızartmamız, taze patateslerden hazırlanır. Ketçap ve mayonez eşliğinde servis edilir. Tek başına atıştırmalık veya ana yemek yanında mükemmel.</short_desc>
+        <weightInGrams>200</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>Taze patateslerden hazırlanır.</item>
+                    <item>Altın sarısı renginde kızartılır.</item>
+                    <item>Dışı çıtır, içi yumuşaktır.</item>
+                    <item>Ketçap ve mayonez ile servis edilir.</item>
+                </items>
+            </detail>
+            <detail title="Hazırlık ve Pişirme">
+                <items>
+                    <item>Patatesler parmak şeklinde kesilir.</item>
+                    <item>Kızgın yağda çıtır olana kadar kızartılır.</item>
+                    <item>Sıcak servis edilir.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>Yan Ürünler</category>
+        <category_url>yan-urunler</category_url>
+        <name>Tavuk Nugget (8 Adet)</name>
+        <url_name>tavuk-nugget-8-adet</url_name>
+        <price>185</price>
+        <images>
+            <image>tavuk-nugget-8-adet.jpg</image>
+        </images>
+        <keywords>tavuk nugget, chicken nugget, çıtır tavuk, pane tavuk, atıştırmalık</keywords>
+        <html_desc>Altın sarısı çıtır 8 adet tavuk nugget.</html_desc>
+        <short_desc>Çıtır pane kaplamalı 8 adet tavuk nugget. Altın sarısı renginde kızartılarak dışı çıtır içi yumuşak sunulur. Özellikle çocukların favorisi olan lezzetli bir atıştırmalık.</short_desc>
+        <weightInGrams>160</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>Pane kaplamalı, çıtır dokuludur.</item>
+                    <item>8 adet olarak servis edilir.</item>
+                    <item>Atıştırmalık ve yan ürün olarak uygundur.</item>
+                </items>
+            </detail>
+            <detail title="Hazırlık ve Pişirme">
+                <items>
+                    <item>Tavuk nuggetlar kızartmaya hazır şekilde kullanılır.</item>
+                    <item>Kızgın yağda çıtır olana kadar kızartılır.</item>
+                    <item>Sıcak servis edilir.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>Yan Ürünler</category>
+        <category_url>yan-urunler</category_url>
+        <name>Şnitzel</name>
+        <url_name>snitzel</url_name>
+        <price>265</price>
+        <images>
+            <image>snitzel.jpg</image>
+        </images>
+        <keywords>şnitzel, tavuk şnitzel, pane tavuk, çıtır tavuk, patatesli şnitzel</keywords>
+        <html_desc>Pane kaplı çıtır tavuk şnitzel, patates kızartması ile servis edilir.</html_desc>
+        <short_desc>Klasik Avrupa mutfağının sevilen lezzeti şnitzel, ince dövülmüş tavuk bonfileden hazırlanır. Pane ile kaplanarak altın sarısı çıtır kızartılır.Atıştırmalık ve yan ürün olarak uygundur.</short_desc>
+        <weightInGrams>250</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>Tavuk etidir.</item>
+                    <item>Pane kaplamalı, çıtır dokuludur.</item>
+                    <item>Atıştırmalık ve yan ürün olarak uygundur.</item>
+                </items>
+            </detail>
+            <detail title="Hazırlık ve Pişirme">
+                <items>
+                    <item>Yüksek ısıda kızartılır.</item>
+                    <item>Fazla yağı süzdürülerek servis edilir.</item>
+                    <item>Sıcak servis edilir.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>Yan Ürünler</category>
+        <category_url>yan-urunler</category_url>
+        <name>Cajun Çıtır Tavuk</name>
+        <url_name>cajun-citir-tavuk</url_name>
+        <price>319</price>
+        <images>
+            <image>cajun-citir-tavuk.jpg</image>
+        </images>
+        <keywords>cajun tavuk, baharatlı tavuk, çıtır tavuk, pane tavuk, tavuk atıştırmalık</keywords>
+        <html_desc>Cajun baharatlı çıtır tavuk parçaları.</html_desc>
+        <short_desc>Cajun baharatları ile hazırlanan çıtır tavuk parçaları sunulur. Dışı çıtır içi sulu tavuk, baharatlı ve lezzetli bir deneyim yaşatır. Cajun'un karakteristik acılı ve aromatik tadını yansıtır.</short_desc>
+        <weightInGrams>220</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>Cajun baharat karışımı ile hazırlanmıştır.</item>
+                    <item>Pane kaplamalı ve çıtır dokuludur.</item>
+                    <item>Baharatlı ve aromatik bir lezzet sunar.</item>
+                </items>
+            </detail>
+            <detail title="Hazırlık ve Pişirme">
+                <items>
+                    <item>Yüksek ısıda kızartılır.</item>
+                    <item>Fazla yağı süzdürülerek servis edilir.</item>
+                    <item>Sıcak servis edilir.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>Yan Ürünler</category>
+        <category_url>yan-urunler</category_url>
+        <name>Cajun Baharatlı Patates Kızartması</name>
+        <url_name>cajun-baharatli-patates-kizartmasi</url_name>
+        <price>159</price>
+        <images>
+            <image>cajun-baharatli-patates-kizartmasi.jpg</image>
+        </images>
+        <keywords>cajun patates, baharatlı patates, elma dilim patates, atıştırmalık, kızarmış patates</keywords>
+        <html_desc>Cajun baharatlı elma dilim patates kızartması.</html_desc>
+        <short_desc>Klasik patates kızartmasına farklı bir yorum, elma dilim kesilen patatesler Cajun baharatlarıyla tatlandırılır. Hafif acılı ve aromatik bu patates sıradan kızartmadan sıkılanlar için mükemmel. Farklı bir patates deneyimi sunar.</short_desc>
+        <weightInGrams>200</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>Cajun baharat karışımı ile lezzetlendirilmiştir.</item>
+                    <item>Çıtır dokulu ve aromatik bir tada sahiptir.</item>
+                    <item>Yan ürün ve atıştırmalık olarak uygundur.</item>
+                </items>
+            </detail>
+            <detail title="Hazırlık ve Pişirme">
+                <items>
+                    <item>Patatesler elma dilim şeklinde kesilir.</item>
+                    <item>Cajun baharatları ile harmanlanır.</item>
+                    <item>Kızgın yağda kızartılır.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>İçecekler</category>
+        <category_url>icecekler</category_url>
+        <name>Coca-Cola (33 cl)</name>
+        <url_name>coca-cola-33-cl</url_name>
+        <price>85</price>
+        <images>
+            <image>coca-cola-33-cl.jpg</image>
+        </images>
+        <keywords>coca cola, kola, gazlı içecek, soğuk içecek, meşrubat, paketli içecek</keywords>
+        <html_desc>33 cl Coca-Cola, kutu ambalajlı ve soğuk servis edilen gazlı içecektir.</html_desc>
+        <short_desc>Coca-Cola, 33 cl kutu ambalajında sunulan paketli bir gazlı içecektir. Soğuk olarak servis edilir ve yemeklerin yanında sıkça tercih edilir.</short_desc>
+        <weightInGrams>330</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>33 cl kutu ambalaj.</item>
+                    <item>Gazlı içecektir.</item>
+                    <item>Hazır ve paketli üründür.</item>
+                </items>
+            </detail>
+            <detail title="Servis Bilgisi">
+                <items>
+                    <item>Soğuk olarak tüketiniz.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>İçecekler</category>
+        <category_url>icecekler</category_url>
+        <name>Coca-Cola (2,5 L)</name>
+        <url_name>coca-cola-25-l</url_name>
+        <price>219</price>
+        <images>
+            <image>coca-cola-25-l.jpg</image>
+        </images>
+        <keywords>coca cola, kola, büyük kola, aile boyu kola, gazlı içecek, meşrubat, paketli içecek</keywords>
+        <html_desc>2,5 litre Coca-Cola, pet şişe ambalajlı ve paketli gazlı içecektir.</html_desc>
+        <short_desc>Coca-Cola, 2,5 litre pet şişe ambalajında sunulan aile boyu gazlı içecektir. Kalabalık sofralar ve paylaşımlar için idealdir. Soğuk servis edilmesi tavsiye edilir.</short_desc>
+        <weightInGrams>2500</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>2,5 litre pet şişe ambalaj.</item>
+                    <item>Gazlı içecektir.</item>
+                    <item>Hazır ve paketli üründür.</item>
+                </items>
+            </detail>
+            <detail title="Servis Bilgisi">
+                <items>
+                    <item>Soğuk olarak tüketiniz.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+
+    <product>
+        <category>İçecekler</category>
+        <category_url>icecekler</category_url>
+        <name>Fanta (33 cl)</name>
+        <url_name>fanta-33-cl</url_name>
+        <price>68</price>
+        <images>
+            <image>fanta-33-cl.jpg</image>
+        </images>
+        <keywords>fanta, portakallı gazlı içecek, gazlı içecek, soğuk içecek, meşrubat, paketli içecek</keywords>
+        <html_desc>33 cl Fanta, kutu ambalajlı ve soğuk servis edilen portakallı gazlı içecektir.</html_desc>
+        <short_desc>Fanta, 33 cl kutu ambalajında sunulan paketli bir portakallı gazlı içecektir. Soğuk olarak servis edilir ve yemeklerin yanında sıkça tercih edilir.</short_desc>
+        <weightInGrams>330</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>33 cl kutu ambalaj.</item>
+                    <item>Portakallı gazlı içecektir.</item>
+                    <item>Hazır ve paketli üründür.</item>
+                </items>
+            </detail>
+            <detail title="Servis Bilgisi">
+                <items>
+                    <item>Soğuk olarak tüketiniz.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>İçecekler</category>
+        <category_url>icecekler</category_url>
+        <name>Sprite (33 cl)</name>
+        <url_name>sprite-33-cl</url_name>
+        <price>75</price>
+        <images>
+            <image>sprite-33-cl.jpg</image>
+        </images>
+        <keywords>sprite, limonlu gazlı içecek, gazlı içecek, soğuk içecek, meşrubat, paketli içecek</keywords>
+        <html_desc>33 cl Sprite, kutu ambalajlı ve soğuk servis edilen limon aromalı gazlı içecektir.</html_desc>
+        <short_desc>Sprite, 33 cl kutu ambalajında sunulan paketli bir limon aromalı gazlı içecektir. Soğuk olarak servis edilir ve  sıkça tercih edilir.</short_desc>
+        <weightInGrams>330</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>33 cl kutu ambalaj.</item>
+                    <item>Limon aromalı gazlı içecektir.</item>
+                    <item>Hazır ve paketli üründür.</item>
+                </items>
+            </detail>
+            <detail title="Servis Bilgisi">
+                <items>
+                    <item>Soğuk olarak tüketiniz.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>İçecekler</category>
+        <category_url>icecekler</category_url>
+        <name>Lipton Ice Tea (33 cl)</name>
+        <url_name>lipton-ice-tea-33-cl</url_name>
+        <price>85</price>
+        <images>
+            <image>lipton-ice-tea-33-cl.jpg</image>
+        </images>
+        <keywords>lipton ice tea, soğuk çay, buzlu çay, şeftalili ice tea, paketli içecek</keywords>
+        <html_desc>33 cl Lipton Ice Tea, kutu ambalajlı ve soğuk servis edilen paketli içecektir.</html_desc>
+        <short_desc>Lipton Ice Tea, 33 cl kutu ambalajında sunulan şeftali aromalı soğuk çaydır. Gerçek çay yapraklarından üretilir, ferahlatıcı tadı ile özellikle sıcak günlerde tercih edilir.</short_desc>
+        <weightInGrams>330</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>33 cl kutu ambalaj.</item>
+                    <item>Meyve aromalı soğuk çay.</item>
+                    <item>Hazır ve paketli üründür.</item>
+                </items>
+            </detail>
+            <detail title="Servis Bilgisi">
+                <items>
+                    <item>Soğuk olarak tüketiniz.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>İçecekler</category>
+        <category_url>icecekler</category_url>
+        <name>Capri-Sun Mystic Dragon (33 cl)</name>
+        <url_name>capri-sun-mystic-dragon-33-cl</url_name>
+        <price>50</price>
+        <images>
+            <image>capri-sun-mystic-dragon-33-cl.jpg</image>
+        </images>
+        <keywords>capri sun, capri sun mystic dragon, paketli içecek, meyve aromalı içecek, soğuk içecek, hazır içecek</keywords>
+        <html_desc>33 cl Capri-Sun Mystic Dragon, paketli ve soğuk servis edilen meyve aromalı içecektir.</html_desc>
+        <short_desc>Capri-Sun Mystic Dragon, pratik poşet ambalajı ile sunulan paketli bir içecektir. Soğuk olarak servis edilir.</short_desc>
+        <weightInGrams>330</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>33 cl paketli içecek.</item>
+                    <item>Egzotik meyve aromalı.</item>
+                    <item>Hazır ve paketli üründür.</item>
+                </items>
+            </detail>
+            <detail title="Servis Bilgisi">
+                <items>
+                    <item>Soğuk olarak tüketiniz.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>İçecekler</category>
+        <category_url>icecekler</category_url>
+        <name>Capri-Sun Multi Vitamin (33 cl)</name>
+        <url_name>capri-sun-multi-vitamin-33-cl</url_name>
+        <price>50</price>
+        <images>
+            <image>capri-sun-multi-vitamin-33-cl.jpg</image>
+        </images>
+        <keywords>capri sun, capri sun multivitamin, paketli içecek, meyve aromalı içecek, soğuk içecek, hazır içecek</keywords>
+        <html_desc>33 cl Capri-Sun Multi Vitamin, paketli ve soğuk servis edilen meyve aromalı içecektir.</html_desc>
+        <short_desc>Capri-Sun Multi Vitamin, pratik poşet ambalajı ile sunulan paketli bir içecektir. Soğuk olarak servis edilir.</short_desc>
+        <weightInGrams>330</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>33 cl paketli içecek.</item>
+                    <item>Hazır ve paketli üründür.</item>
+                </items>
+            </detail>
+
+            <detail title="Servis Bilgisi">
+                <items>
+                    <item>Soğuk olarak tüketiniz.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>İçecekler</category>
+        <category_url>icecekler</category_url>
+        <name>Doğanay Şalgam Suyu (33 cl)</name>
+        <url_name>salgam-suyu-33-cl</url_name>
+        <price>50</price>
+        <images>
+            <image>salgam-suyu-33-cl.jpg</image>
+        </images>
+        <keywords>şalgam suyu, şalgam, doğanay şalgam, geleneksel içecek, fermente içecek, soğuk içecek</keywords>
+        <html_desc>33 cl Doğanay Şalgam Suyu, paketli ve soğuk servis edilen fermente içecektir.</html_desc>
+        <short_desc>Doğanay Şalgam Suyu, 33 cl şişe ambalajında sunulan geleneksel fermente bir içecektir. Soğuk olarak servis edilir.</short_desc>
+        <weightInGrams>330</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>33 cl şişe ambalaj.</item>
+                    <item>Fermente geleneksel içecek.</item>
+                    <item>Hazır ve paketli üründür.</item>
+                </items>
+            </detail>
+            <detail title="Servis Bilgisi">
+                <items>
+                    <item>Soğuk olarak tüketiniz.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+
+    <product>
+        <category>İçecekler</category>
+        <category_url>icecekler</category_url>
+        <name>Ayran (30 cl)</name>
+        <url_name>ayran-30-cl</url_name>
+        <price>55</price>
+        <images>
+            <image>ayran-30-cl.jpg</image>
+        </images>
+        <keywords>ayran, yoğurt içeceği, geleneksel içecek, türk içeceği, soğuk içecek</keywords>
+        <html_desc>30 cl ayran, paketli ve soğuk servis edilen yoğurt bazlı içecektir.</html_desc>
+        <short_desc>Ayran, 30 cl ambalajında sunulan geleneksel bir yoğurt içeceğidir. Soğuk olarak servis edilir.</short_desc>
+        <weightInGrams>300</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>30 cl ambalaj.</item>
+                    <item>Yoğurt bazlı geleneksel içecek.</item>
+                    <item>Hazır ve paketli üründür.</item>
+                </items>
+            </detail>
+            <detail title="Servis Bilgisi">
+                <items>
+                    <item>Soğuk olarak tüketiniz.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+    <product>
+        <category>İçecekler</category>
+        <category_url>icecekler</category_url>
+        <name>Su (50 cl)</name>
+        <url_name>su-50-cl</url_name>
+        <price>25</price>
+        <images>
+            <image>su-50-cl.jpg</image>
+        </images>
+        <keywords>su, içme suyu, pet şişe su, doğal su, soğuk içecek</keywords>
+        <html_desc>50 cl pet şişe su, paketli ve soğuk servis edilen içme suyudur.</html_desc>
+        <short_desc>Su, 50 cl pet şişe ambalajında sunulan paketli bir içme suyudur. Soğuk olarak servis edilir.</short_desc>
+        <weightInGrams>500</weightInGrams>
+        <details>
+            <detail title="Özellikler">
+                <items>
+                    <item>50 cl pet şişe ambalaj.</item>
+                    <item>Saf içme suyu.</item>
+                    <item>Hazır ve paketli üründür.</item>
+                </items>
+            </detail>
+            <detail title="Servis Bilgisi">
+                <items>
+                    <item>Soğuk olarak tüketiniz.</item>
+                </items>
+            </detail>
+        </details>
+    </product>
+
+</products>

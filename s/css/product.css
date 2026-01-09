@@ -1,0 +1,136 @@
+main {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+main > nav {
+    margin-inline: 2rem;
+    background-color: var(--color-primary);
+    padding: 1rem 2rem;
+    text-align: left;
+    font-size: 1.1rem;
+    border-bottom: var(--border-bottom);
+}
+
+main > nav > a {
+    color: #2a5090;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+main > nav > u {
+    color: var(--color-text);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main > section {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+main > section > article {
+    text-align: left;
+}
+
+main > section > article > img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+main > section > article > h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #2a5090;
+}
+
+main > section > article > p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+}
+
+main > section > article > h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2a5090;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+main > section > article > ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+main > section > article > ul > li {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--color-text);
+}
+
+.details-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.detail-box {
+    flex: 1;
+    min-width: 200px;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e9ecef;
+}
+
+.detail-box h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2a5090;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #2a5090;
+    padding-bottom: 0.3rem;
+}
+
+.detail-box ul {
+    list-style: disc;
+    margin-left: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.detail-box ul li {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-text);
+}
+
+.product-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.product-meta span {
+    font-size: 1.1rem;
+    color: #000000;
+}
+
+.product-meta span strong {
+    color: #2a5090;
+}

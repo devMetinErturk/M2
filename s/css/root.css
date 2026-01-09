@@ -1,0 +1,13 @@
+/* Sayfa Renkleri*/
+:root{
+    --color-backgraound:#fff;
+    --color-primary: #ffffff;
+    --color-secondry:#000000;
+    --color-text: #000;
+    
+}
+
+/*Border*/
+:root{
+    --border-bottom: 2px solid black;
+}
