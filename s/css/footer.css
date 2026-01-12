@@ -1,7 +1,10 @@
-footer{
-    background-color: var(--color-primary);
-    color: var(--color-secondry);
-    font-size: 1.1rem;
+footer {
+    background-color: var(--color-main);
+    color: var(--color-dark);
+    font-size: 1.2rem;
     text-align: center;
     padding: 1rem;
+    margin-inline: 2.5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }

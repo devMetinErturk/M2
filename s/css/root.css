@@ -1,13 +1,9 @@
-/* Sayfa Renkleri*/
+/*Colors*/
 :root{
-    --color-backgraound:#fff;
-    --color-primary: #ffffff;
-    --color-secondry:#000000;
-    --color-text: #000;
-    
-}
+    --color-dark: #000;
+    --color-light: #fff;
+    --color-main :  #bfd0ee ;
+    --color-primary: #2a5090;
+    --color-secondry:#ffffff;
 
-/*Border*/
-:root{
-    --border-bottom: 2px solid black;
 }
