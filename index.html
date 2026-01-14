@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="s/css/main.css">
     <link rel="stylesheet" href="s/css/footer.css">
     <link rel="stylesheet" href="s/css/mobil.css">
+    <link rel="stylesheet" href="s/css/cart.css">
 
 </head>
 <body>
@@ -25,6 +26,7 @@
     </header>
     <main>
         <nav>
+            <p>Mutfaklar</p>
             <label><input type="checkbox" data-filter="makarnalar" checked> Makarnalar</label>
             <label><input type="checkbox" data-filter="burgerler" checked> Burgerler</label>
             <label><input type="checkbox" data-filter="izgaralar" checked> Izgaralar</label>
@@ -375,7 +377,9 @@
         </details>
         <p class="hint">İçecekleri tekrar görüntülemek için başlığa tıklayın</p>
 
-        <p class="no-selection-message" hidden>Kategori seçili değil, ürün listelenmez.</p>
+        <div class="no-selection-message" hidden>
+            <div class="no-selection-warning">Menüyü görüntülemek için bir mutfak seçiniz</div>
+        </div>
 
         
     </main>
@@ -389,6 +393,7 @@
     </footer>
 
     <script src="s/js/filter.js"></script>
+    <script src="s/js/cart.js"></script>
 
 </body>
 </html>

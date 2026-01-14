@@ -3,35 +3,48 @@ main {
     margin-bottom: 3rem;
 }
 
+main>nav>p {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
 main>nav {
+    background-color: var(--color-main);
+    border-radius: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 0.75rem;
     margin-top: 2rem;
     margin-bottom: 4rem;
-    background-color: var(--color-main);
     margin-inline: 2.5rem;
-    border-radius: 1rem;
-    ;
+    padding: 1rem;
 }
 
 main>nav>label {
     background-color: var(--color-main);
     color: var(--color-primary);
-    padding-block: 1.8rem;
-    padding-inline: 2rem;
-    font-weight: bold;
-    font-size: 1.6rem;
+    padding: 0.9rem 2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
     cursor: pointer;
     user-select: none;
+    border-radius: 50px;
+    border: 2px solid var(--color-primary);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
 }
 
 main>nav>label:has(input:checked) {
     background-color: var(--color-primary);
     color: var(--color-light);
-    border-radius: 0.5rem;
+    border-color: var(--color-main);
+    box-shadow: 0 4px 12px rgba(42, 80, 144, 0.35);
 }
-
 
 main>nav>label>input {
     display: none;
@@ -44,6 +57,19 @@ main>nav>label>input {
 
 .no-selection-message[hidden] {
     display: none;
+}
+
+.no-selection-warning {
+    display: inline-block;
+    background-color: white;
+    color: var(--color-primary);
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--color-primary);
 }
 
 .daily-recommendation {
@@ -191,6 +217,8 @@ main>details>ul>li>a>p {
 main>details>ul>li>a>img {
     width: 100%;
     max-width: 400px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border-radius: 0.5rem;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
 }

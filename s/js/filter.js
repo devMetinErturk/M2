@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const productLink = product.querySelector('a').href
 
         noSelectionMessage.innerHTML = `
+            <div class="no-selection-warning">Menüyü görüntülemek için bir mutfak seçiniz</div>
             <div class="daily-recommendation">
                 <h2>Şefin Önerisi</h2>
                 <a href="${productLink}" class="product-name">${productName}</a>
