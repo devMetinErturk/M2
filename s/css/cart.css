@@ -18,11 +18,6 @@
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
-#cart-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 25px rgba(42, 80, 144, 0.5);
-}
-
 #cart-button.added {
     transform: scale(1.2);
     background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
@@ -95,10 +90,6 @@
     padding: 0;
 }
 
-.cart-close:hover {
-    opacity: 0.8;
-}
-
 /* Sepet İçeriği */
 .cart-items {
     flex: 1;
@@ -164,10 +155,6 @@
     justify-content: center;
 }
 
-.qty-btn:hover {
-    background-color: #2a5090;
-    color: white;
-}
 
 .qty {
     font-weight: bold;
@@ -188,10 +175,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.remove-btn:hover {
-    background-color: #c82333;
 }
 
 /* Sepet Footer */
@@ -250,11 +233,6 @@
     color: white;
 }
 
-.btn-whatsapp:hover,
-.btn-telegram:hover {
-    opacity: 0.9;
-}
-
 .btn-clear-cart {
     width: 100%;
     padding: 0.75rem;
@@ -264,10 +242,6 @@
     border-radius: 8px;
     cursor: pointer;
     font-size: 0.95rem;
-}
-
-.btn-clear-cart:hover {
-    background-color: #5a6268;
 }
 
 /* Ürün Kartı Buton Wrapper */
@@ -292,12 +266,6 @@
     transition: all 0.3s ease;
     box-shadow: 0 3px 10px rgba(40, 167, 69, 0.3);
     letter-spacing: 0.05rem;
-}
-
-.add-to-cart-btn:hover {
-    background: linear-gradient(135deg, #34ce57 0%, #28a745 100%);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
 }
 
 .add-to-cart-btn:active {
@@ -332,18 +300,8 @@
     background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
 }
 
-.product-qty-btn.minus:hover {
-    background: linear-gradient(135deg, #e4606d 0%, #dc3545 100%);
-    transform: scale(1.1);
-}
-
 .product-qty-btn.plus {
     background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
-}
-
-.product-qty-btn.plus:hover {
-    background: linear-gradient(135deg, #34ce57 0%, #28a745 100%);
-    transform: scale(1.1);
 }
 
 .product-qty {
