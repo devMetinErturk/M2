@@ -79,8 +79,56 @@ document.addEventListener('DOMContentLoaded', function() {
                         <span><strong>Fiyat:</strong> ${price} ₺</span>
                         <span><strong>Gramaj:</strong> ${weight} gr</span>
                     </div>
+                    <div class="product-btn-wrapper" data-product-name="${name}" data-product-price="${price}" data-product-image="s/img/${image}">
+                        <button class="add-to-cart-btn">Sepete Ekle</button>
+                        <div class="product-qty-controls">
+                            <button class="product-qty-btn minus">-</button>
+                            <span class="product-qty">0</span>
+                            <button class="product-qty-btn plus">+</button>
+                        </div>
+                    </div>
                 </article>
             `;
+
+            // Sepete ekle butonunu aktif et
+            const wrapper = section.querySelector('.product-btn-wrapper');
+            const addBtn = wrapper.querySelector('.add-to-cart-btn');
+            const qtyControls = wrapper.querySelector('.product-qty-controls');
+            const qtySpan = wrapper.querySelector('.product-qty');
+            const minusBtn = wrapper.querySelector('.minus');
+            const plusBtn = wrapper.querySelector('.plus');
+            const priceNum = parseInt(price);
+
+            // Sepetteki mevcut durumu kontrol et
+            function updateButtonState() {
+                const item = Cart.items.find(i => i.name === name);
+                if (item && item.quantity > 0) {
+                    addBtn.style.display = 'none';
+                    qtyControls.style.display = 'flex';
+                    qtySpan.textContent = item.quantity;
+                } else {
+                    addBtn.style.display = 'block';
+                    qtyControls.style.display = 'none';
+                }
+            }
+
+            addBtn.addEventListener('click', () => {
+                Cart.addItem(name, priceNum, 's/img/' + image);
+                updateButtonState();
+            });
+
+            minusBtn.addEventListener('click', () => {
+                Cart.updateQuantity(name, -1);
+                updateButtonState();
+            });
+
+            plusBtn.addEventListener('click', () => {
+                Cart.updateQuantity(name, 1);
+                updateButtonState();
+            });
+
+            // Sayfa yüklendiğinde durumu güncelle
+            updateButtonState();
         })
         .catch(error => {
             console.error('XML yüklenirken hata:', error);

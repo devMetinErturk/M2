@@ -5,15 +5,15 @@ main {
 
 main > nav {
     margin-inline: 2rem;
-    background-color: var(--color-primary);
-    padding: 1rem 2rem;
+    background-color: var(--color-main);
+    border-radius: 1rem;
+    padding: 2rem 2rem;
     text-align: left;
     font-size: 1.1rem;
-    border-bottom: var(--border-bottom);
 }
 
 main > nav > a {
-    color: #2a5090;
+    color: var(--color-dark);
     text-decoration: none;
     font-weight: bold;
 }
@@ -22,7 +22,7 @@ main > nav > a {
 main > nav > u {
     color: var(--color-text);
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 main > section {
@@ -41,7 +41,7 @@ main > section > article > img {
     max-width: 600px;
     margin: 0 auto 1.5rem;
     border-radius: 0.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px var(--color-dark)(0, 0, 0, 0.15);
 }
 
 main > section > article > h1 {
@@ -50,7 +50,7 @@ main > section > article > h1 {
     color: var(--color-text);
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid #2a5090;
+    border-bottom: 3px solid var(--color-primary);
 }
 
 main > section > article > p {
@@ -63,7 +63,7 @@ main > section > article > p {
 main > section > article > h3 {
     font-size: 1.4rem;
     font-weight: bold;
-    color: #2a5090;
+    color: var(--color-primary);
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
 }
@@ -90,7 +90,7 @@ main > section > article > ul > li {
 .detail-box {
     flex: 1;
     min-width: 200px;
-    background-color: #f8f9fa;
+    background-color: var(--color-light);
     padding: 1rem;
     border-radius: 0.5rem;
     border: 1px solid #e9ecef;
@@ -99,9 +99,9 @@ main > section > article > ul > li {
 .detail-box h3 {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #2a5090;
+    color: var(--color-primary);
     margin-bottom: 0.5rem;
-    border-bottom: 2px solid #2a5090;
+    border-bottom: 2px solid var(--color-primary);
     padding-bottom: 0.3rem;
 }
 
@@ -128,9 +128,25 @@ main > section > article > ul > li {
 
 .product-meta span {
     font-size: 1.1rem;
-    color: #000000;
+    color: var(--color-dark);
 }
 
 .product-meta span strong {
-    color: #2a5090;
+    color:var(--color-primary);
+}
+
+/* Product sayfasında sepete ekle butonu */
+main > section > article > .product-btn-wrapper {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: var(--color-light);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > section > article > .product-btn-wrapper .add-to-cart-btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
 }

@@ -5,10 +5,10 @@ const Cart = {
 
     init() {
         this.loadFromStorage();
+        this.createCartPanel();
         this.setupProductButtons();
         this.updateCartUI();
         this.updateProductButtons();
-        this.createCartPanel();
     },
 
     loadFromStorage() {
@@ -86,12 +86,15 @@ const Cart = {
             const name = li.querySelector('a > p').textContent.trim();
             const priceText = li.querySelector('b').textContent.trim();
             const price = parseInt(priceText.replace(/[^0-9]/g, ''));
+            const imgEl = li.querySelector('a > img');
+            const image = imgEl ? imgEl.src : '';
 
             // Wrapper div oluştur
             const wrapper = document.createElement('div');
             wrapper.className = 'product-btn-wrapper';
             wrapper.dataset.productName = name;
             wrapper.dataset.productPrice = price;
+            wrapper.dataset.productImage = image;
 
             // Sepete ekle butonu
             const addBtn = document.createElement('button');
@@ -116,7 +119,7 @@ const Cart = {
             // Event listeners
             addBtn.addEventListener('click', (e) => {
                 e.preventDefault();
-                this.addItem(name, price);
+                this.addItem(name, price, image);
             });
 
             qtyControls.querySelector('.minus').addEventListener('click', (e) => {
@@ -154,7 +157,7 @@ const Cart = {
         });
     },
 
-    addItem(name, price) {
+    addItem(name, price, image) {
         const existingItem = this.items.find(item => item.name === name);
 
         if (existingItem) {
@@ -163,6 +166,7 @@ const Cart = {
             this.items.push({
                 name: name,
                 price: price,
+                image: image || '',
                 quantity: 1
             });
         }
@@ -223,17 +227,21 @@ const Cart = {
                 let html = '';
                 this.items.forEach(item => {
                     const itemTotal = item.price * item.quantity;
+                    const imageHtml = item.image ? `<img src="${item.image}" alt="${item.name}" class="cart-item-image">` : '';
                     html += `
                         <div class="cart-item" data-name="${item.name}">
-                            <div class="cart-item-info">
-                                <span class="cart-item-name">${item.name}</span>
-                                <span class="cart-item-calc">${item.price} TL x ${item.quantity} = <strong>${itemTotal} TL</strong></span>
-                            </div>
-                            <div class="cart-item-controls">
-                                <button class="qty-btn minus">-</button>
-                                <span class="qty">${item.quantity}</span>
-                                <button class="qty-btn plus">+</button>
-                                <button class="remove-btn">&times;</button>
+                            ${imageHtml}
+                            <div class="cart-item-content">
+                                <div class="cart-item-info">
+                                    <span class="cart-item-name">${item.name}</span>
+                                    <span class="cart-item-calc">${item.price} TL x ${item.quantity} = <strong>${itemTotal} TL</strong></span>
+                                </div>
+                                <div class="cart-item-controls">
+                                    <button class="qty-btn minus">-</button>
+                                    <span class="qty">${item.quantity}</span>
+                                    <button class="qty-btn plus">+</button>
+                                    <button class="remove-btn">&times;</button>
+                                </div>
                             </div>
                         </div>
                     `;
@@ -276,10 +284,65 @@ const Cart = {
     },
 
     clearCart() {
-        this.items = [];
-        this.saveToStorage();
-        this.updateCartUI();
-        this.updateProductButtons();
+        this.showConfirmModal(
+            'Sepeti Temizle',
+            'Sepeti temizlemek istediğinize emin misiniz?',
+            () => {
+                this.items = [];
+                this.saveToStorage();
+                this.updateCartUI();
+                this.updateProductButtons();
+            }
+        );
+    },
+
+    showConfirmModal(title, message, onConfirm) {
+        // Mevcut modalı kaldır
+        const existingModal = document.querySelector('.confirm-overlay');
+        if (existingModal) {
+            existingModal.remove();
+        }
+
+        // Modal HTML oluştur
+        const overlay = document.createElement('div');
+        overlay.className = 'confirm-overlay';
+        overlay.innerHTML = `
+            <div class="confirm-modal">
+                <div class="confirm-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                    </svg>
+                </div>
+                <h3 class="confirm-title">${title}</h3>
+                <p class="confirm-message">${message}</p>
+                <div class="confirm-buttons">
+                    <button class="confirm-btn cancel">Vazgec</button>
+                    <button class="confirm-btn confirm">Evet</button>
+                </div>
+            </div>
+        `;
+
+        document.body.appendChild(overlay);
+
+        // Animasyon için kısa gecikme
+        setTimeout(() => overlay.classList.add('show'), 10);
+
+        // Event listeners
+        const closeModal = () => {
+            overlay.classList.remove('show');
+            setTimeout(() => overlay.remove(), 300);
+        };
+
+        overlay.querySelector('.confirm-btn.cancel').addEventListener('click', closeModal);
+        overlay.querySelector('.confirm-btn.confirm').addEventListener('click', () => {
+            closeModal();
+            if (onConfirm) onConfirm();
+        });
+
+        // Overlay'e tıklayınca kapat
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) closeModal();
+        });
     },
 
     generateOrderMessage() {
