@@ -2,6 +2,7 @@
 const Cart = {
     items: [],
     phoneNumber: '905050000000', // İşletme telefon numarası
+    categoryOrder: ['Makarnalar', 'Burgerler', 'Izgaralar','Ekmek Arası Ürünler', 'Yan Ürünler', 'İçecekler'],
 
     init() {
         this.loadFromStorage();
@@ -41,19 +42,14 @@ const Cart = {
                 </div>
                 <div class="cart-actions">
                     <button class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                        </svg>
+                        <img src="s/img/whatsapp.png" alt="WhatsApp" width="20" height="20">
                         WhatsApp ile Gonder
                     </button>
                     <button class="btn-telegram">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
-                        </svg>
+                        <img src="s/img/telegram.png" alt="Telegram" width="20" height="20">
                         Telegram ile Gonder
                     </button>
                 </div>
-                <button class="btn-clear-cart">Sepeti Temizle</button>
             </div>
         `;
         document.body.appendChild(cartPanel);
@@ -62,7 +58,7 @@ const Cart = {
         const cartButton = document.createElement('button');
         cartButton.id = 'cart-button';
         cartButton.innerHTML = `
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
                 <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
             </svg>
             <span class="cart-count">0</span>
@@ -74,7 +70,6 @@ const Cart = {
         cartPanel.querySelector('.cart-close').addEventListener('click', () => this.closePanel());
         cartPanel.querySelector('.btn-whatsapp').addEventListener('click', () => this.sendWhatsApp());
         cartPanel.querySelector('.btn-telegram').addEventListener('click', () => this.sendTelegram());
-        cartPanel.querySelector('.btn-clear-cart').addEventListener('click', () => this.clearCart());
     },
 
     setupProductButtons() {
@@ -88,6 +83,8 @@ const Cart = {
             const price = parseInt(priceText.replace(/[^0-9]/g, ''));
             const imgEl = li.querySelector('a > img');
             const image = imgEl ? imgEl.src : '';
+            const detailsEl = li.closest('details');
+            const category = detailsEl ? detailsEl.querySelector('summary').textContent.trim() : 'Diger';
 
             // Wrapper div oluştur
             const wrapper = document.createElement('div');
@@ -119,7 +116,7 @@ const Cart = {
             // Event listeners
             addBtn.addEventListener('click', (e) => {
                 e.preventDefault();
-                this.addItem(name, price, image);
+                this.addItem(name, price, image, category);
             });
 
             qtyControls.querySelector('.minus').addEventListener('click', (e) => {
@@ -157,7 +154,7 @@ const Cart = {
         });
     },
 
-    addItem(name, price, image) {
+    addItem(name, price, image, category = '') {
         const existingItem = this.items.find(item => item.name === name);
 
         if (existingItem) {
@@ -167,6 +164,7 @@ const Cart = {
                 name: name,
                 price: price,
                 image: image || '',
+                category: category || 'Diger',
                 quantity: 1
             });
         }
@@ -206,12 +204,15 @@ const Cart = {
         return this.items.reduce((sum, item) => sum + item.quantity, 0);
     },
 
+    formatPrice(price) {
+        return price.toLocaleString('tr-TR');
+    },
+
     updateCartUI() {
         const cartCount = document.querySelector('.cart-count');
         const cartItems = document.querySelector('.cart-items');
         const cartTotal = document.querySelector('.cart-total strong');
         const cartActions = document.querySelector('.cart-actions');
-        const btnClear = document.querySelector('.btn-clear-cart');
 
         if (cartCount) {
             cartCount.textContent = this.getTotalItems();
@@ -222,33 +223,46 @@ const Cart = {
             if (this.items.length === 0) {
                 cartItems.innerHTML = '<p class="cart-empty">Sepetiniz bos</p>';
                 if (cartActions) cartActions.style.display = 'none';
-                if (btnClear) btnClear.style.display = 'none';
             } else {
-                let html = '';
+                // Kategoriye göre grupla
+                const groupedItems = {};
                 this.items.forEach(item => {
-                    const itemTotal = item.price * item.quantity;
-                    const imageHtml = item.image ? `<img src="${item.image}" alt="${item.name}" class="cart-item-image">` : '';
-                    html += `
-                        <div class="cart-item" data-name="${item.name}">
-                            ${imageHtml}
-                            <div class="cart-item-content">
-                                <div class="cart-item-info">
-                                    <span class="cart-item-name">${item.name}</span>
-                                    <span class="cart-item-calc">${item.price} TL x ${item.quantity} = <strong>${itemTotal} TL</strong></span>
-                                </div>
-                                <div class="cart-item-controls">
-                                    <button class="qty-btn minus">-</button>
-                                    <span class="qty">${item.quantity}</span>
-                                    <button class="qty-btn plus">+</button>
-                                    <button class="remove-btn">&times;</button>
-                                </div>
-                            </div>
-                        </div>
-                    `;
+                    const cat = item.category || 'Diger';
+                    if (!groupedItems[cat]) {
+                        groupedItems[cat] = [];
+                    }
+                    groupedItems[cat].push(item);
                 });
+
+                // Sabit sıraya göre HTML oluştur
+                let html = '';
+                this.categoryOrder.forEach(category => {
+                    if (groupedItems[category]) {
+                        html += `<div class="cart-category-header">${category}</div>`;
+                        groupedItems[category].forEach(item => {
+                            html += this.renderCartItem(item);
+                        });
+                        delete groupedItems[category];
+                    }
+                });
+
+                // Kalan kategoriler (Diger vs)
+                Object.keys(groupedItems).forEach(category => {
+                    html += `<div class="cart-category-header">${category}</div>`;
+                    groupedItems[category].forEach(item => {
+                        html += this.renderCartItem(item);
+                    });
+                });
+
+                // Sepeti Temizle butonu
+                html += `
+                    <div class="btn-clear-cart-wrapper">
+                        <button class="btn-clear-cart">Sepeti Temizle</button>
+                    </div>
+                `;
+
                 cartItems.innerHTML = html;
                 if (cartActions) cartActions.style.display = 'flex';
-                if (btnClear) btnClear.style.display = 'block';
 
                 // Event listeners for quantity buttons
                 cartItems.querySelectorAll('.cart-item').forEach(itemEl => {
@@ -257,12 +271,40 @@ const Cart = {
                     itemEl.querySelector('.plus').addEventListener('click', () => this.updateQuantity(name, 1));
                     itemEl.querySelector('.remove-btn').addEventListener('click', () => this.removeItem(name));
                 });
+
+                // Sepeti temizle butonu event listener
+                const btnClear = cartItems.querySelector('.btn-clear-cart');
+                if (btnClear) {
+                    btnClear.addEventListener('click', () => this.clearCart());
+                }
             }
         }
 
         if (cartTotal) {
-            cartTotal.textContent = this.getTotal() + ' TL';
+            cartTotal.textContent = this.formatPrice(this.getTotal()) + ' TL';
         }
+    },
+
+    renderCartItem(item) {
+        const itemTotal = item.price * item.quantity;
+        const imageHtml = item.image ? `<img src="${item.image}" alt="${item.name}" class="cart-item-image">` : '';
+        return `
+            <div class="cart-item" data-name="${item.name}">
+                ${imageHtml}
+                <div class="cart-item-content">
+                    <div class="cart-item-info">
+                        <span class="cart-item-name">${item.name}</span>
+                        <span class="cart-item-calc">${this.formatPrice(item.price)} TL x ${item.quantity} = <strong>${this.formatPrice(itemTotal)} TL</strong></span>
+                    </div>
+                    <div class="cart-item-controls">
+                        <button class="qty-btn minus">-</button>
+                        <span class="qty">${item.quantity}</span>
+                        <button class="qty-btn plus">+</button>
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                </div>
+            </div>
+        `;
     },
 
     showAddedFeedback() {
@@ -353,11 +395,11 @@ const Cart = {
         this.items.forEach(item => {
             const itemTotal = item.price * item.quantity;
             message += `${item.name}\n`;
-            message += `${item.price} TL x ${item.quantity} adet = ${itemTotal} TL\n\n`;
+            message += `${this.formatPrice(item.price)} TL x ${item.quantity} adet = ${this.formatPrice(itemTotal)} TL\n\n`;
         });
 
         message += `-------------------\n`;
-        message += `TOPLAM TUTAR: ${this.getTotal()} TL`;
+        message += `TOPLAM TUTAR: ${this.formatPrice(this.getTotal())} TL`;
 
         return message;
     },

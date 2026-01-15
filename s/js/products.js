@@ -69,24 +69,26 @@ document.addEventListener('DOMContentLoaded', function() {
             const section = document.querySelector('section');
             section.innerHTML = `
                 <article>
-                    <h1>${name}</h1>
+                    <div class="product-header">
+                        <h1>${name}</h1>
+                        <div class="product-btn-wrapper" data-product-name="${name}" data-product-price="${price}" data-product-image="s/img/${image}">
+                            <button class="add-to-cart-btn">Sepete Ekle</button>
+                            <div class="product-qty-controls">
+                                <button class="product-qty-btn minus">-</button>
+                                <span class="product-qty">0</span>
+                                <button class="product-qty-btn plus">+</button>
+                            </div>
+                        </div>
+                    </div>
                     <img src="s/img/${image}" alt="${name}" />
-                    <p>${htmlDesc}</p>
-                    <p>${shortDesc}</p>
-                    ${detailsHtml}
                     <div class="product-meta">
                         <span><strong>Kategori:</strong> ${category}</span>
                         <span><strong>Fiyat:</strong> ${price} ₺</span>
                         <span><strong>Gramaj:</strong> ${weight} gr</span>
                     </div>
-                    <div class="product-btn-wrapper" data-product-name="${name}" data-product-price="${price}" data-product-image="s/img/${image}">
-                        <button class="add-to-cart-btn">Sepete Ekle</button>
-                        <div class="product-qty-controls">
-                            <button class="product-qty-btn minus">-</button>
-                            <span class="product-qty">0</span>
-                            <button class="product-qty-btn plus">+</button>
-                        </div>
-                    </div>
+                    <p>${htmlDesc}</p>
+                    <p>${shortDesc}</p>
+                    ${detailsHtml}
                 </article>
             `;
 
@@ -113,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             addBtn.addEventListener('click', () => {
-                Cart.addItem(name, priceNum, 's/img/' + image);
+                Cart.addItem(name, priceNum, 's/img/' + image, category);
                 updateButtonState();
             });
 

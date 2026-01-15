@@ -1,10 +1,9 @@
-/* Sepet Butonu (Floating) */
 #cart-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 56px;
-    height: 56px;
+    width: 70px;
+    height: 70px;
     border-radius: 0.8rem;
     background-color: var(--color-main);
     color: var(--color-primary);
@@ -24,12 +23,12 @@
     box-shadow: 0 5px 13px rgba(42, 80, 144, 0.45);
 }
 
-#cart-button svg {
-    width: 26px;
-    height: 26px;
+#cart-button>svg {
+    width: 34px;
+    height: 34px;
 }
 
-.cart-count {
+#cart-button>span {
     position: absolute;
     top: -5px;
     right: -5px;
@@ -47,12 +46,11 @@
     border: 2px solid var(--color-primary);
 }
 
-/* Sepet Paneli */
 #cart-panel {
     position: fixed;
     top: 0;
-    right: -385px;
-    width: 368px;
+    right: -450px;
+    width: 420px;
     max-width: 95vw;
     height: 100vh;
     background-color: var(--color-main);
@@ -69,12 +67,11 @@
     right: 0;
 }
 
-/* Sepet Header */
-.cart-header {
+#cart-panel>.cart-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.8rem 1rem;
+    padding: 1rem 1.2rem;
     background-color: var(--color-light);
     color: var(--color-primary);
     border: 2px solid var(--color-primary);
@@ -83,19 +80,18 @@
     flex-shrink: 0;
 }
 
-.cart-header h2 {
+#cart-panel>.cart-header>h2 {
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
-.cart-close {
+#cart-panel>.cart-header>button {
     background: none;
     border: none;
     color: var(--color-primary);
     font-size: 1.4rem;
     cursor: pointer;
-    line-height: 1;
     padding: 0;
     width: 26px;
     height: 26px;
@@ -104,45 +100,100 @@
     justify-content: center;
 }
 
-/* Sepet İçeriği */
-.cart-items {
+#cart-panel>.cart-items {
     flex: 1;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 0.8rem;
+    padding: 1rem;
     background-color: var(--color-main);
 }
 
-.cart-empty {
+#cart-panel>.cart-items::-webkit-scrollbar {
+    width: 8px;
+}
+
+#cart-panel>.cart-items::-webkit-scrollbar-track {
+    background: var(--color-light);
+    border-radius: 4px;
+}
+
+#cart-panel>.cart-items::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 4px;
+}
+
+#cart-panel>.cart-items::-webkit-scrollbar-thumb:hover {
+    background: var(--color-dark);
+}
+
+#cart-panel>.cart-items>.cart-empty {
     text-align: center;
     color: var(--color-dark);
     padding: 1.6rem 0.8rem;
     font-size: 0.8rem;
 }
 
-/* Sepet Ürün Kartı */
+#cart-panel>.cart-items>.cart-category-header {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+    padding: 0.5rem 0.8rem;
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+    margin-top: 0.6rem;
+}
+
+#cart-panel>.cart-items>.cart-category-header:first-child {
+    margin-top: 0;
+}
+
+#cart-panel>.cart-items>.btn-clear-cart-wrapper {
+    padding: 0.6rem 0;
+    margin-top: 0.6rem;
+    border-top: 1px dashed var(--color-primary);
+    text-align: center;
+}
+
+#cart-panel>.cart-items>.btn-clear-cart-wrapper>button {
+    width: 60%;
+    padding: 0.6rem 1rem;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    border: 2px solid var(--color-dark);
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#cart-panel>.cart-items>.btn-clear-cart-wrapper>button:hover {
+    background-color: rgb(211, 69, 69);
+    color: var(--color-light);
+}
+
 .cart-item {
     background-color: var(--color-light);
     border: 2px solid var(--color-primary);
     border-radius: 0.6rem;
-    padding: 0.7rem;
-    margin-bottom: 0.6rem;
+    padding: 0.8rem;
+    margin-bottom: 0.7rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
     display: flex;
     align-items: center;
-    gap: 0.7rem;
+    gap: 0.8rem;
 }
 
-.cart-item-image {
-    width: 96px;
-    height: 96px;
+.cart-item>img {
+    width: 110px;
+    height: 110px;
     object-fit: cover;
     border-radius: 0.4rem;
     flex-shrink: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.cart-item-content {
+.cart-item>.cart-item-content {
     flex: 1;
     min-width: 0;
     display: flex;
@@ -150,173 +201,146 @@
     gap: 0.4rem;
 }
 
-.cart-item-info {
+.cart-item>.cart-item-content>.cart-item-info {
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
 }
 
-.cart-item-name {
+.cart-item>.cart-item-content>.cart-item-info>.cart-item-name {
     display: -webkit-box;
     -webkit-line-clamp: 2;
-    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     font-weight: bold;
     color: var(--color-primary);
-    font-size: 0.76rem;
+    font-size: 0.9rem;
     line-height: 1.3;
     min-height: 2.6em;
 }
 
-.cart-item-calc {
+.cart-item>.cart-item-content>.cart-item-info>.cart-item-calc {
     color: var(--color-dark);
-    font-size: 0.68rem;
+    font-size: 0.8rem;
 }
 
-.cart-item-calc strong {
+.cart-item>.cart-item-content>.cart-item-info>.cart-item-calc>strong {
     color: var(--color-primary);
 }
 
-/* Sepet Ürün Kontrolleri */
-.cart-item-controls {
+.cart-item>.cart-item-content>.cart-item-controls {
     display: flex;
     align-items: center;
-    gap: 0.4rem;
+    gap: 0.5rem;
 }
 
-.qty-btn {
-    width: 22px;
-    height: 22px;
+.cart-item>.cart-item-content>.cart-item-controls>.qty-btn {
+    width: 26px;
+    height: 26px;
     border: 2px solid var(--color-primary);
     background-color: var(--color-light);
     color: var(--color-primary);
-    border-radius: 0.32rem;
+    border-radius: 0.4rem;
     cursor: pointer;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.2s ease;
-    flex-shrink: 0;
 }
 
-.qty-btn:hover {
+.cart-item>.cart-item-content>.cart-item-controls>.qty-btn:hover {
     background-color: var(--color-primary);
     color: var(--color-light);
 }
 
-.qty {
+.cart-item>.cart-item-content>.cart-item-controls>.qty {
     font-weight: bold;
-    min-width: 19px;
+    min-width: 22px;
     text-align: center;
     color: var(--color-dark);
-    font-size: 0.76rem;
+    font-size: 0.9rem;
 }
 
-.remove-btn {
+.cart-item>.cart-item-content>.cart-item-controls>.remove-btn {
     margin-left: auto;
-    width: 22px;
-    height: 22px;
+    width: 26px;
+    height: 26px;
     border: 2px solid var(--color-dark);
     background-color: var(--color-light);
     color: var(--color-dark);
-    border-radius: 0.32rem;
+    border-radius: 0.4rem;
     cursor: pointer;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.2s ease;
-    flex-shrink: 0;
 }
 
-.remove-btn:hover {
+.cart-item>.cart-item-content>.cart-item-controls>.remove-btn:hover {
     background-color: var(--color-dark);
     color: var(--color-light);
 }
 
-/* Sepet Footer */
-.cart-footer {
-    padding: 0.8rem 1rem;
+#cart-panel>.cart-footer {
+    padding: 1rem 1.2rem;
     border-top: 2px solid var(--color-primary);
     background-color: var(--color-primary);
     border-top-left-radius: 0.8rem;
     flex-shrink: 0;
 }
 
-.cart-total {
+#cart-panel>.cart-footer>.cart-total {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0.7rem;
-    padding: 0.4rem 0;
+    margin-bottom: 0.8rem;
+    padding: 0.5rem 0;
+    color: var(--color-light);
 }
 
-.cart-total span {
-    color: var(--color-light);
-    font-size: 0.88rem;
-}
-
-.cart-total strong {
-    color: var(--color-light);
+#cart-panel>.cart-footer>.cart-total>span {
     font-size: 1rem;
 }
 
-.cart-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-    margin-bottom: 0.4rem;
+#cart-panel>.cart-footer>.cart-total>strong {
+    font-size: 1.15rem;
 }
 
-.btn-whatsapp,
-.btn-telegram {
+#cart-panel>.cart-footer>.cart-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#cart-panel>.cart-footer>.cart-actions>button {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.4rem;
-    padding: 0.6rem 0.8rem;
+    gap: 0.5rem;
+    padding: 0.7rem 1rem;
     border: none;
     border-radius: 0.6rem;
-    font-size: 0.76rem;
+    font-size: 0.9rem;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-}
-
-.btn-whatsapp {
-    background-color: #25D366;
     color: var(--color-light);
 }
 
-.btn-telegram {
+#cart-panel>.cart-footer>.cart-actions>.btn-whatsapp {
+    background-color: #29a71a;
+}
+
+#cart-panel>.cart-footer>.cart-actions>.btn-telegram {
     background-color: #0088cc;
-    color: var(--color-light);
 }
 
-.btn-clear-cart {
-    width: 100%;
-    padding: 0.5rem;
-    background-color: var(--color-light);
-    color: var(--color-dark);
-    border: 2px solid var(--color-dark);
-    border-radius: 0.6rem;
-    cursor: pointer;
-    font-size: 0.72rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.btn-clear-cart:hover {
-    background-color: var(--color-dark);
-    color: var(--color-light);
-}
-
-/* Onay Modalı */
 .confirm-overlay {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -325,10 +349,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 2000;
+    z-index: 10;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
+    border-radius: 0.8rem;
 }
 
 .confirm-overlay.show {
@@ -336,7 +361,7 @@
     visibility: visible;
 }
 
-.confirm-modal {
+.confirm-overlay>.confirm-modal {
     background-color: var(--color-light);
     border-radius: 0.8rem;
     padding: 1.2rem;
@@ -349,11 +374,11 @@
     border: 2px solid var(--color-primary);
 }
 
-.confirm-overlay.show .confirm-modal {
+.confirm-overlay.show>.confirm-modal {
     transform: scale(1);
 }
 
-.confirm-icon {
+.confirm-overlay>.confirm-modal>.confirm-icon {
     width: 40px;
     height: 40px;
     margin: 0 auto 0.7rem;
@@ -365,33 +390,33 @@
     border: 2px solid var(--color-primary);
 }
 
-.confirm-icon svg {
+.confirm-overlay>.confirm-modal>.confirm-icon>svg {
     width: 19px;
     height: 19px;
     fill: var(--color-primary);
 }
 
-.confirm-title {
+.confirm-overlay>.confirm-modal>h3 {
     font-size: 0.88rem;
     font-weight: bold;
     color: var(--color-primary);
     margin-bottom: 0.3rem;
 }
 
-.confirm-message {
+.confirm-overlay>.confirm-modal>p {
     color: var(--color-dark);
     margin-bottom: 1rem;
     font-size: 0.76rem;
     line-height: 1.4;
 }
 
-.confirm-buttons {
+.confirm-overlay>.confirm-modal>.confirm-buttons {
     display: flex;
     gap: 0.6rem;
     justify-content: center;
 }
 
-.confirm-btn {
+.confirm-overlay>.confirm-modal>.confirm-buttons>button {
     padding: 0.5rem 1rem;
     border-radius: 0.4rem;
     font-size: 0.76rem;
@@ -401,73 +426,66 @@
     min-width: 72px;
 }
 
-.confirm-btn.cancel {
+.confirm-overlay>.confirm-modal>.confirm-buttons>.cancel {
     background-color: var(--color-light);
     color: var(--color-dark);
     border: 2px solid var(--color-dark);
 }
 
-.confirm-btn.cancel:hover {
+.confirm-overlay>.confirm-modal>.confirm-buttons>.cancel:hover {
     background-color: var(--color-dark);
     color: var(--color-light);
 }
 
-.confirm-btn.confirm {
+.confirm-overlay>.confirm-modal>.confirm-buttons>.confirm {
     background-color: var(--color-primary);
     color: var(--color-light);
     border: 2px solid var(--color-primary);
 }
 
-.confirm-btn.confirm:hover {
+.confirm-overlay>.confirm-modal>.confirm-buttons>.confirm:hover {
     background-color: var(--color-dark);
     border-color: var(--color-dark);
 }
 
-/* Ürün Kartı Buton Wrapper */
 .product-btn-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0.8rem;
-    margin-top: 0.4rem;
-    min-height: 2.4rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    min-height: 3.5rem;
 }
 
-/* Sepete Ekle Butonu */
-.add-to-cart-btn {
+.product-btn-wrapper>.add-to-cart-btn {
     background-color: var(--color-primary);
     color: var(--color-light);
     border: none;
-    padding: 0.5rem 1.2rem;
-    border-radius: 0.6rem;
+    padding: 0.9rem 2rem;
+    border-radius: 1rem;
     cursor: pointer;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     font-weight: bold;
     transition: all 0.3s ease;
     box-shadow: 0 3px 10px rgba(42, 80, 144, 0.35);
 }
 
-.add-to-cart-btn:active {
-    transform: translateY(0);
-}
-
-/* Ürün Miktar Kontrolleri */
-.product-qty-controls {
+.product-btn-wrapper>.product-qty-controls {
     display: none;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.8rem;
 }
 
-.product-qty-btn {
-    width: 26px;
-    height: 26px;
+.product-btn-wrapper>.product-qty-controls>button {
+    width: 40px;
+    height: 40px;
     border: 2px solid var(--color-primary);
-    border-radius: 0.4rem;
+    border-radius: 0.6rem;
     background-color: var(--color-light);
     color: var(--color-primary);
     cursor: pointer;
-    font-size: 0.88rem;
+    font-size: 1.3rem;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -476,40 +494,29 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
-.product-qty-btn:hover {
+.product-btn-wrapper>.product-qty-controls>button:hover {
     background-color: var(--color-primary);
     color: var(--color-light);
 }
 
-.product-qty-btn.minus {
+.product-btn-wrapper>.product-qty-controls>.minus {
     border-color: var(--color-dark);
     color: var(--color-dark);
 }
 
-.product-qty-btn.minus:hover {
+.product-btn-wrapper>.product-qty-controls>.minus:hover {
     background-color: var(--color-dark);
     color: var(--color-light);
 }
 
-.product-qty-btn.plus {
-    border-color: var(--color-primary);
-    color: var(--color-primary);
-}
-
-.product-qty-btn.plus:hover {
-    background-color: var(--color-primary);
-    color: var(--color-light);
-}
-
-.product-qty {
-    min-width: 22px;
+.product-btn-wrapper>.product-qty-controls>span {
+    min-width: 30px;
     text-align: center;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     color: var(--color-dark);
 }
 
-/* Mobil Uyumluluk */
 @media (max-width: 480px) {
     #cart-button {
         bottom: 16px;
@@ -518,12 +525,12 @@
         height: 48px;
     }
 
-    #cart-button svg {
+    #cart-button>svg {
         width: 22px;
         height: 22px;
     }
 
-    .cart-count {
+    #cart-button>span {
         width: 18px;
         height: 18px;
         font-size: 0.64rem;
@@ -536,16 +543,16 @@
         border-radius: 0;
     }
 
-    .cart-header {
+    #cart-panel>.cart-header {
         padding: 0.7rem 0.8rem;
         border-radius: 0;
     }
 
-    .cart-header h2 {
+    #cart-panel>.cart-header>h2 {
         font-size: 0.88rem;
     }
 
-    .cart-items {
+    #cart-panel>.cart-items {
         padding: 0.6rem;
     }
 
@@ -554,93 +561,92 @@
         gap: 0.6rem;
     }
 
-    .cart-item-image {
+    .cart-item>img {
         width: 56px;
         height: 56px;
     }
 
-    .cart-item-name {
+    .cart-item>.cart-item-content>.cart-item-info>.cart-item-name {
         font-size: 0.72rem;
         min-height: 2.4em;
     }
 
-    .cart-item-calc {
+    .cart-item>.cart-item-content>.cart-item-info>.cart-item-calc {
         font-size: 0.64rem;
     }
 
-    .qty-btn,
-    .remove-btn {
+    .cart-item>.cart-item-content>.cart-item-controls>.qty-btn,
+    .cart-item>.cart-item-content>.cart-item-controls>.remove-btn {
         width: 21px;
         height: 21px;
         font-size: 0.72rem;
     }
 
-    .qty {
+    .cart-item>.cart-item-content>.cart-item-controls>.qty {
         min-width: 18px;
         font-size: 0.72rem;
     }
 
-    .cart-footer {
+    #cart-panel>.cart-footer {
         padding: 0.7rem 0.8rem;
         border-radius: 0;
     }
 
-    .cart-total span,
-    .cart-total strong {
+    #cart-panel>.cart-footer>.cart-total>span,
+    #cart-panel>.cart-footer>.cart-total>strong {
         font-size: 0.8rem;
     }
 
-    .btn-whatsapp,
-    .btn-telegram {
+    #cart-panel>.cart-footer>.cart-actions>button {
         padding: 0.5rem 0.7rem;
         font-size: 0.72rem;
     }
 
-    .btn-clear-cart {
+    #cart-panel>.cart-items>.btn-clear-cart-wrapper>button {
         padding: 0.4rem;
         font-size: 0.68rem;
     }
 
-    .add-to-cart-btn {
+    .product-btn-wrapper>.add-to-cart-btn {
         padding: 0.4rem 1rem;
         font-size: 0.72rem;
     }
 
-    .product-qty-btn {
+    .product-btn-wrapper>.product-qty-controls>button {
         width: 22px;
         height: 22px;
         font-size: 0.8rem;
     }
 
-    .product-qty {
+    .product-btn-wrapper>.product-qty-controls>span {
         font-size: 0.76rem;
         min-width: 19px;
     }
 
-    .confirm-modal {
+    .confirm-overlay>.confirm-modal {
         padding: 1rem;
         max-width: 224px;
     }
 
-    .confirm-icon {
+    .confirm-overlay>.confirm-modal>.confirm-icon {
         width: 36px;
         height: 36px;
     }
 
-    .confirm-icon svg {
+    .confirm-overlay>.confirm-modal>.confirm-icon>svg {
         width: 18px;
         height: 18px;
     }
 
-    .confirm-title {
+    .confirm-overlay>.confirm-modal>h3 {
         font-size: 0.8rem;
     }
 
-    .confirm-message {
+    .confirm-overlay>.confirm-modal>p {
         font-size: 0.72rem;
     }
 
-    .confirm-btn {
+    .confirm-overlay>.confirm-modal>.confirm-buttons>button {
         padding: 0.4rem 0.8rem;
         font-size: 0.72rem;
         min-width: 64px;
